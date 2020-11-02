@@ -1,0 +1,335 @@
+body{
+    background-image: url("/public/img/betterdesktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 100%;
+    max-width: 100%;
+}
+/*Nav Bar*/
+#navBar{
+    background-color: #686868;
+    overflow: hidden;
+}
+#navBar a{
+    font-family: Courier New, monospace;
+    float: left;
+    color: #000000;
+    text-align: center;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-size: 17px;
+}
+#navBar a:hover{
+    background-color: #ddd;
+    color: black;
+}
+/*Task Bar*/
+.taskbarIcon{
+    transition: transform 0.2s;
+    cursor: pointer;
+    width: 70;
+    height: 70;
+    border-radius: 7px;
+}
+.taskbarIcon:hover{
+    transform: translate(0,-10px);
+    background-color: rgba(183, 183, 183, 0.76);
+    border-radius: 2px;
+}
+#box_taskBar{
+    /*Position*/
+    position: absolute;
+    top: 92.3%;
+    left: 65;
+    /*Style*/
+    width: 90%;
+    height: 35;
+    background-color: rgba( 96, 96, 96, 0.606 );
+}
+#accountIcon{
+    background-color: #999999;
+    position: absolute;
+    top: 89%;
+    left: 80;
+}
+#calcIcon{
+    background-color: #c7c7c7a6;
+    position: absolute;
+    top: 89%;
+    left: 260;
+}
+#companyIcon{
+    background-color: #c7c7c7a6;
+    position: absolute;
+    top: 89%;
+    left: 170;
+    
+}
+#appMove{
+    position: absolute;
+    line-height: 200px;
+    white-space: nowrap;
+    text-align: center;
+    cursor: move;
+}
+#appMove2{
+    position: absolute;
+    line-height: 200px;
+    white-space: nowrap;
+    text-align: center;
+    cursor: move;
+}
+/*Calculator*/
+.calculator{
+    position: absolute;
+    left: 500;
+    width: 300px;
+    height: 550px;
+    border: 3px solid #000000;
+    border-radius: 5px;
+    background: whitesmoke;
+    color: black;
+    font-family: Roboto Slab, "Roboto";
+}
+.calculator-screen{
+    color: black;
+    border: #6b6b6b;
+    width:100%;
+    font-size: 4rem;
+    height: 120px;
+    border: none;
+    background-color: #a8a8a8;
+}
+#othButton{
+    height: 50px;
+    background-color: #fff;
+    border-radius: 3px;
+    border: 1px solid #c4c4c4;
+    background-color: transparent;
+    font-size: 2rem;
+    color: black;
+    text-shadow: 0 1.5px #08080885;
+}
+#othButton:hover{
+    background-color: #afafaf;
+}
+.operator{
+    color: #337cac;
+    text-shadow: 0 1.5px #08080885;
+    color: black;
+}
+.all-clear{
+    background-color: #f93e3e
+}
+.all-clear:hover{
+    background-color: #d90d0d;
+}
+.equal-sign{
+    background-color: #479aff;
+}
+.equal-sign:hover{
+    background-color: #0265de;
+}
+.calculator-keys{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+/*Desktop*/
+.desktopIcon{
+    /*Style*/
+    border-radius: 5px;
+    background-color: rgba(183, 183, 183, 0.76);
+    width: 50;
+    /*Transform*/
+    transition: all .2s ease-in-out;
+}
+.desktopIcon:hover{
+    background-color: #d1d1d1;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+#DesktopImageMorsecode{
+    position: absolute;
+    top: 100;
+    left: 150;
+}
+/*Account*/
+.account{
+    position: absolute;
+    left: 600;
+    width: 450px;
+    height: 600px;
+    background-color: whitesmoke;
+}
+#profilePicAccount{
+    position: absolute;
+    top: 70;
+    left: 40;
+    width: 150;
+    height: 150;
+}
+#accountName{
+    font-weight: bold;
+    position: absolute;
+    top: 110;
+    left: 40;
+    font-family: Roboto Slab, "Roboto";
+    font-size: 30;
+}
+#accountDomain{
+    position: absolute;
+    top: 150;
+    left: 40;
+    font-family: Roboto Slab, "Roboto";
+    font-size: 15;
+}
+#accountEmail{
+    position: absolute;
+    top: 200;
+    left: 40;
+    font-family: Roboto, "Roboto";
+}
+#accountNumber{
+    position: absolute;
+    top: 230;
+    left: 40;
+    font-family: Roboto, "Roboto";
+}
+#accountCompany{
+    position: absolute;
+    top: 260;
+    left: 40;
+    font-family: Roboto, "Roboto";
+}
+/*Morse Code*/
+#imageMorseStyle{
+    position: absolute;
+    left: 400;
+    top: 0;
+    width: 300;
+    height: 320;
+    border: 3px solid #000000;
+    cursor: move;
+}
+#morseText{
+    position: absolute;
+    top: 138;
+    left: 125;
+    color: white;
+    font-size: 15;
+    font-family: 'Courier New', Courier, monospace;
+}
+/*DesktopImageChemical*/
+#DesktopImageChemical{
+    position: absolute;
+    left: 500;
+    top: 400;
+}
+#imageChemicalStyle{
+    width: 400;
+    max-width: 400;
+    height: 250;
+    border: 3px solid black;
+    cursor: move;
+}
+/*Company Log in*/
+.loginCompany{
+    position: absolute;
+    width: 600;
+    height: 400;
+    background-color: #a6a6a6;
+    cursor: move;
+    border: 3px solid #000000;
+    border-top: 25px solid #525252
+}
+#loginCompanyName{
+    position: absolute;
+    top: 50;
+    left: 205;
+    background-color: #d4d4d4;
+    font-family: 'Courier New', Courier, monospace;
+}
+#loginCompany1{
+    position: absolute;
+    top: 150;
+    left: 124;
+    width: 90mm;
+    height: 35;
+}
+#loginCompany2{
+    position: absolute;
+    top: 200;
+    left: 124;
+    width: 90mm;
+    height: 35;
+}
+#loginCompanySubmit{
+    position: absolute;
+    top: 280;
+    left: 245;
+    background-color: #d9d9d9;
+    border: none;
+    height: 40;
+    width: 90
+}
+#loginCompanySubmit:hover{
+    background-color: #c4c4c4;
+    border: 3px solid #000000;
+}
+/*Sticky Notes*/
+#stickyNote1{
+    position: absolute;
+    left: 1030;
+    top: 40;
+    width: 300;
+    height: 500;
+    font-size: 15;
+    font-weight: bold;
+    background-color: #fafa73;
+    font-family: "Roboto", Roboto;
+}
+/*Company DashBoard*/
+.companyDashBoard{
+    background-color: #b1b1b1;
+    border: 3px solid #000000;
+    cursor: move;
+    width: 700;
+    height: 400;
+}
+.CompanyText{
+    color: white;
+    background-color: black;
+    position: absolute;
+    font-family: Roboto Slab, "Roboto";
+    font-weight: bold;
+    font-size: 30;
+    top: 0;
+    left: 20;
+}
+.DButton{
+    border: none;
+    color: white;
+    background-color: #000000;
+    font-family: Roboto, "Roboto Slab";
+    font-weight: 400;
+    font-size: 20;
+}
+.DButton:hover{
+    border: 2px solid #0066eb;
+}
+#videoText{
+    font-family: Roboto, "Roboto Slab";
+    color: black;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    left: 250;
+    top: 170;
+}
+#equation{
+    position: absolute;
+    top: 340;
+    left: 268;
+}

@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Linking Cascading Style Sheets-->
+        <link rel="stylesheet" href="../styles/index.css">
+        <link rel="stylesheet" href="../styles/homeScreen.css">
+        <!--Adding Favicon-->
+        <link rel="icon" href="/public/favicon.png" type="image/x-icon/">
+        <!--Adding Title-->
+        <title>000.001.901</title>
+        <!--Other-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    </head>
+    <body>
+        <div id=page>
+            <div id=content>
+                <div id=ambience>
+                    <audio controls autoplay loop style="position: absolute; opacity: 0; width: 0;height: 0;">
+                        <source src="/public/sound/ambience1.mp3" type="audio/mp3">
+                    </audio>
+                </div>
+                <div id=navBar>
+                    <a href="#home">Home</a>
+                    <a href="#news">News</a>
+                    <a href="#about">About</a>
+                </div>
+                <div id=taskBar>
+                    <p id=box_taskBar></p>
+                    <a onclick="accountOpen()"><img src="/public/img/titleProfilePic.png" style="opacity: 1;" class=taskbarIcon id=accountIcon></a>
+                    <a onclick="calculatorOpen()"><img src="/public/img/calculator.png" style="opacity: 1;" class=taskbarIcon id=calcIcon></a>
+                    <a onclick="companyLoginOpen()"><img src="/public/img/questionMark.png" style="opacity: 1;" class=taskbarIcon id=companyIcon></a>
+                </div>
+                <div id=desktop>
+                    <div id=morseCode>
+                        <a onclick="morseOpen()"><img src="/public/img/imageIcon.png" style="opacity: 1;" class=desktopIcon id=DesktopImageMorsecode><p id=morseText>01101101.jpg</p></a>
+                        <a onclick="chemcialOpen()"><img src="/public/img/imageIcon.png" style="opacity: 1;" class=desktopIcon id=DesktopImageChemical><p id=chemicalText></p></a>
+                    </div>  
+                </div>
+                <div id=applications>
+                    <div id=appMove class=calculator style="opacity: 0;z-index: -100;">
+                        <input type="text" class="calculator-screen" value="" disabled />
+                        <div class="calculator-keys">
+                            <button type="button" id=othButton value="7">7</button>
+                            <button type="button" id=othButton  value="8">8</button>
+                            <button type="button" id=othButton  value="9">9</button>
+                            <button type="button" id=othButton  value="4">4</button>
+                            <button type="button" id=othButton  value="5">5</button>
+                            <button type="button" id=othButton  value="6">6</button>
+                            <button type="button" id=othButton  value="1">1</button>
+                            <button type="button" id=othButton  value="2">2</button>
+                            <button type="button" id=othButton  value="3">3</button>
+                            <button type="button" id=othButton  class="operator" value="+">+</button>
+                            <button type="button" id=othButton  value="0">0</button>
+                            <button type="button" id=othButton class="operator" value="-">-</button>
+                            <button type="button" id=othButton  class="operator" value="*">&times;</button>
+                            <button type="button" id=othButton  class="operator" value="/">&divide;</button>
+                            <button type="button" id=othButton  class="decimal" value=".">.</button>
+                            <button type="button" id=othButton  class="equal-sign operator" value="=">=</button>
+                            <button type="button" id=othButton class="all-clear" value="all-clear">AC</button>
+                        </div>
+                    </div>
+                    <div id=appMove2 class=account style="opacity: 0;z-index: -100;">
+                        <img id=profilePicAccount src="/public/img/titleProfilePic.png">
+                        <p id=accountName>Sharapov, Stefan</p>
+                        <p id=accountDomain>TPMXQQA/ssharapov</p>
+                        <p id=accountEmail>Email: ssharapov@TPMXQQA.ru</p>
+                        <p id=accountNumber>IP: 127.004.831</p>
+                        <p id=accountCompany>Company: ... | - | .- | ..-. | ..-. | .. | -.-. | .</p>
+                    </div>
+                    <div id=appMove3 class=loginCompany style="opacity: 0;z-index: -100;">
+                        <p id=loginCompanyName></p>
+                        <input type="text" id=loginCompany1 placeholder="IP Address">
+                        <input type=text id=loginCompany2 placeholder="Chemical Pass">
+                        <button onclick="companyPasswordCheck()" id=loginCompanySubmit>Log In</button>
+                    </div>
+                    <div id=appMove4 class=companyDashBoard style="opacity: 0;z-index: -100;">
+                        <input id=equation placeholder="Finished Game - Nothing left to do">
+                        <p id=videoText style="opacity: 1;z-index: 1;">150 + 298 x 3 + 100 = ?</p>
+                    </div>
+                    <div class=stickyNotes>
+                        <p id=stickyNote1>Chemical Pass: 88, 42, 76, 10</p>
+                    </div>
+                </div>
+                <div id=desktopApplications>
+                    <div id=appMove6 class=morseCode style="opacity: 0;z-index: -100;">
+                        <img src="/public/img/translatorMorse.jpg" id=imageMorseStyle>
+                    </div>
+                    <div id=appMove5 class=chemicalCode style="opacity: 0;z-index: -100;">
+                        <img src="/public/img/Periodic_Table.png" id=imageChemicalStyle>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="../scripts/applications.js"></script>
+        <script src="../scripts/login.js"></script>
+    </body>
+</html>

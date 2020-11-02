@@ -1,0 +1,20 @@
+body, html{background-color: #1e1e1e;}
+#hintButton{
+    /*style*/
+    background-color: rgba( 73, 73, 73, 0.4 );
+    color: #828282;
+    width: 30;
+    height: 30;
+    /*position*/
+    position: absolute;
+    top: 30;
+    left: 30;
+    /*other*/
+    border-radius: 50%;
+    border: none;
+}
+#hintButton:hover{
+    background-color: rgba( 168, 168, 168, 0.523 );
+    color: #ffffff;
+    cursor: pointer;
+}
