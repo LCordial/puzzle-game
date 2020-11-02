@@ -1,5 +1,5 @@
 # Puzzle Game ![License: MIT](https://img.shields.io/badge/license-MIT-brightgreen) ![GitHub issues](https://img.shields.io/github/issues/LCordial/puzzle-game)
-`Puzzle Game` is an incomplete game based on solving puzzle on a 'computer' screen
+`Puzzle Game` is an incomplete game based on solving puzzles on a 'computer' screen
 
 # How to play
 Find clues and solve puzzles
